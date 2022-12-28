@@ -7,6 +7,7 @@ import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { UsersRoutingModule } from './users-routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { UsersRoutingModule } from './users-routing.module';
     ServiciosComponent,
     ContactosComponent,
   ],
-  imports: [CommonModule, UsersRoutingModule],
+  imports: [CommonModule, UsersRoutingModule, FormsModule],
   exports: [NavbarComponent, FooterComponent],
 })
 export class UsersModule {}
