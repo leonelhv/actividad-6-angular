@@ -6,6 +6,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
+import { UsersRoutingModule } from './users-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { ContactosComponent } from './pages/contactos/contactos.component';
     ServiciosComponent,
     ContactosComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, UsersRoutingModule],
   exports: [NavbarComponent, FooterComponent],
 })
 export class UsersModule {}
