@@ -8,7 +8,15 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 
 @NgModule({
-  declarations: [FooterComponent, NavbarComponent, InicioComponent, NosotrosComponent, ServiciosComponent, ContactosComponent],
+  declarations: [
+    FooterComponent,
+    NavbarComponent,
+    InicioComponent,
+    NosotrosComponent,
+    ServiciosComponent,
+    ContactosComponent,
+  ],
   imports: [CommonModule],
+  exports: [NavbarComponent, FooterComponent],
 })
 export class UsersModule {}
